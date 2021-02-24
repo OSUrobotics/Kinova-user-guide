@@ -68,7 +68,7 @@ class MoveRobot():
 
 		self.move_group.allow_replanning(1)
 
-		self.main()
+		self.move()
 	
 	def set_planner_type(self, planner_name):
 		if planner_name == "RRT":
@@ -137,7 +137,7 @@ class MoveRobot():
 		self.disp_pub.publish(self.disp)
 
 
-	def main(self):
+	def move(self):
 
 		# Set up path here
 
