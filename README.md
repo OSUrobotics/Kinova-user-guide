@@ -57,7 +57,7 @@ To avoid running into build error issues, I recommend creating a dedicated works
       $ cd ~/kinova_ws
       $ catkin_make
 
-* Put the [kinova_path_planning.py](https://drive.google.com/open?id=1pvvcQMwMY1uACKpUQSM-u-eN--IOXOdO) file inside the src folder of kinova_scripts package. This script uses the MoveIt Python API to communicate with the arm. 
+* Put the [MoveKinova.py](https://drive.google.com/open?id=1pvvcQMwMY1uACKpUQSM-u-eN--IOXOdO) file inside the src folder of kinova_scripts package. This script uses the MoveIt Python API to communicate with the arm. 
 
 
 # Running the Kinova Arm in Simulation
@@ -97,11 +97,8 @@ This will also launch rviz which will display the trajectory of the arm.
 
  
 
-# Using kinova_path_planning.py file
-* The *MoveRobot()* class uses the moveit API to send waypoints to the arm. 
-* *MoveRobot().go_to_goal([x, y, z, roll, pitch, yaw])* takes in the cartesian coordinates and orientation of the end effector in a list. *You can also give it the quaternion coordinates instead of roll, pitch and yaw. *
-* *MoveRobot().go_to _joint_state([joint1, joint2,.....joint7])* takes in the 7 joint angles of the arm in a list form. 
-* Call these functions in '''MoveRobot().move()
+# Using MoveKinova.py file
+*Please look at the bottom of the file to see demos of the methods.
 
 # Relevant rostopics
 
