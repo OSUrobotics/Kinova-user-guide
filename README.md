@@ -57,7 +57,7 @@ To avoid running into build error issues, I recommend creating a dedicated works
       $ cd ~/kinova_ws
       $ catkin_make
 
-* Put the [MoveKinova.py](https://drive.google.com/open?id=1pvvcQMwMY1uACKpUQSM-u-eN--IOXOdO) file inside the src folder of kinova_scripts package. This script uses the MoveIt Python API to communicate with the arm. 
+* Put the [MoveKinova.py](https://github.com/OSUrobotics/Kinova-user-guide/blob/main/MoveKinova.py) file inside the src folder of kinova_scripts package. This script uses the MoveIt Python API to communicate with the arm. 
 
 
 # Running the Kinova Arm in Simulation
